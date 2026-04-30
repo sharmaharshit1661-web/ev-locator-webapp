@@ -62,30 +62,6 @@ The system follows a modular architecture:
 - Smooth animations
 - Dark/Light mode support
 
-### 🚀 Installation & Setup
-
-1. **Clone Repository**
-   ```bash
-   git clone https://github.com/sharmaharshit1661-web/ev-locator-webapp.git
-   cd ev-locator-webapp
-   ```
-
-2. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Add Environment Variables** (If using Google Maps API)
-   Create a `.env` file:
-   ```env
-   REACT_APP_GOOGLE_MAPS_API_KEY=your_api_key
-   ```
-
-4. **Run the App**
-   ```bash
-   npm run dev
-   ```
-
 ### 📂 Project Structure
 ```text
 ev-locator-webapp/
@@ -125,28 +101,18 @@ ev-locator-webapp/
 - Depends on real-time data accuracy
 - Limited EV availability in some areas
 
-### 🤝 Contributing
-Contributions are welcome!
-
-**Steps:**
-1. Fork the repo
-2. Create a new branch
-3. Make changes
-4. Submit a Pull Request
-
 ### 📄 License
 This project is licensed under the MIT License.
 
-### 👨‍💻 Authors
+### 👨‍💻 Authors and contact details
 - Harshit Sharma
-- Siddhi Garg
-- Muskan Kashyap
-- Mohit
+- Email: sharmaharshit1661@gmail.com
+- Phone no.: +91-7042294029
+
 
 ### 🙌 Acknowledgements
 - Google Maps API
 - Open-source community
-- Lingaya’s Vidyapeeth
 
 ### 📢 Final Note
 The EV Locator App is a step toward building a smarter and more sustainable future by improving accessibility to Electric Vehicles and promoting green transportation 🌍⚡
