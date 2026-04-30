@@ -1,16 +1,152 @@
-# React + Vite
+# 🚗⚡ EV Locator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Real-Time Electric Vehicle Availability System
 
-Currently, two official plugins are available:
+### 📌 Overview
+The EV Locator App is a smart web/mobile-based application designed to help users find nearby available Electric Vehicles (EVs) in real-time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Unlike traditional platforms such as Google Maps, which only provide navigation and charging station locations, this system focuses on live EV availability tracking, making EV access faster and more efficient.
 
-## React Compiler
+### ❗ Problem Statement
+With the growing adoption of Electric Vehicles, users face several challenges:
+- No real-time EV availability information
+- Time-consuming search for nearby EVs
+- Inconvenience in urgent travel situations
+- Existing apps only show static data
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This leads to reduced efficiency and slower EV adoption.
 
-## Expanding the ESLint configuration
+### 💡 Solution
+The EV Locator App solves this problem by:
+- Providing real-time EV location tracking
+- Showing availability status (Available / Booked / Charging)
+- Displaying vehicle details (battery, type, distance)
+- Offering map-based navigation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎯 Key Features
+- **🔴 Real-Time Tracking:** Live EV vehicle location using GPS
+- **🟢 Smart EV Search:** Find nearest EV instantly
+- **🔵 Availability Status:**
+  - 🟢 Available
+  - 🔴 Booked
+  - 🟡 Charging
+- **📍 Map Integration:** Interactive map with EV markers
+- **🔎 Filters:** Vehicle type (Car, Bike, Scooter), Battery level, Distance
+- **🧭 Navigation:** Route to selected EV
+- **🔔 Notifications (Optional):** Alerts for nearby available EVs
+
+### 🏗️ System Architecture
+The system follows a modular architecture:
+- **Frontend Layer:** User interface, Map visualization
+- **Backend Layer:** API handling, Business logic
+- **Database Layer:** Stores EV data (location, status, battery)
+- **Real-Time Layer:** Updates EV availability dynamically
+
+### 🔄 Workflow
+1. User opens the application
+2. GPS detects user location
+3. Request sent to backend
+4. Backend fetches EV data
+5. Nearby EVs displayed on map
+
+### 🛠️ Tech Stack
+- **Frontend:** HTML, CSS, JavaScript, React.js, Tailwind CSS
+- **Backend:** Node.js / Express.js, Firebase (optional)
+- **Database:** MongoDB / Firebase Realtime Database
+- **APIs:** Google Maps API / OpenStreetMap, GPS Location Services
+
+### 🎨 UI/UX Features
+- Clean and modern design
+- Fully responsive (mobile + desktop)
+- Map-centered interface
+- Smooth animations
+- Dark/Light mode support
+
+### 🚀 Installation & Setup
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/sharmaharshit1661-web/ev-locator-webapp.git
+   cd ev-locator-webapp
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Add Environment Variables** (If using Google Maps API)
+   Create a `.env` file:
+   ```env
+   REACT_APP_GOOGLE_MAPS_API_KEY=your_api_key
+   ```
+
+4. **Run the App**
+   ```bash
+   npm run dev
+   ```
+
+### 📂 Project Structure
+```text
+ev-locator-webapp/
+├── public/          # Static assets
+├── src/
+│   ├── assets/      # Images, icons, etc.
+│   ├── components/  # Reusable UI components (Navbar, Map, Panels, Toast)
+│   ├── hooks/       # Custom React hooks (useGeolocation)
+│   ├── pages/       # Application routes (Home, MapDashboard, About, Contact)
+│   ├── services/    # Mock data & simulation logic
+│   ├── App.jsx      # Main application router
+│   ├── index.css    # Global Tailwind styles
+│   └── main.jsx     # React entry point
+├── .gitignore
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+### 🔮 Future Scope
+- ✅ EV booking system
+- 💳 Payment integration
+- 🤖 AI-based EV recommendations
+- 🌐 Multi-city support
+- 🔋 Battery prediction system
+- 📡 IoT integration for real-time vehicle data
+- ⭐ User rating & feedback system
+
+### 🌱 Benefits
+- Saves time and effort
+- Improves EV accessibility
+- Encourages eco-friendly transportation
+- Supports smart mobility systems
+
+### ⚠️ Limitations
+- Requires internet connection
+- Depends on real-time data accuracy
+- Limited EV availability in some areas
+
+### 🤝 Contributing
+Contributions are welcome!
+
+**Steps:**
+1. Fork the repo
+2. Create a new branch
+3. Make changes
+4. Submit a Pull Request
+
+### 📄 License
+This project is licensed under the MIT License.
+
+### 👨‍💻 Authors
+- Harshit Sharma
+- Siddhi Garg
+- Muskan Kashyap
+- Mohit
+
+### 🙌 Acknowledgements
+- Google Maps API
+- Open-source community
+- Lingaya’s Vidyapeeth
+
+### 📢 Final Note
+The EV Locator App is a step toward building a smarter and more sustainable future by improving accessibility to Electric Vehicles and promoting green transportation 🌍⚡
